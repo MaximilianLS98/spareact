@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "salt",
+        "salt/react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+		"react/jsx-closing-bracket-location": [
+			"error",
+			{ "selfClosing": "after-props", "nonEmpty": "after-props" }
+		],
+		"react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+		"react/prop-types": "off"
+	} 
+}
