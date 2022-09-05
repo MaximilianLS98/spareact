@@ -2,18 +2,6 @@ import React from 'react';
 import Board from './Board';
 import '../style/App.css';
 // import Clock from './Clock';
-
-// create a new clock with the timezone of input
-// const formHandler = e => {
-//   e.preventDefault();
-//   const input = e.target.elements[0];
-//   console.log(input, 'this the input');
-//   const { timezone } = input;
-//   const clock = new Clock(timezone.value);
-//   timezone.value = '';
-//   this.setState({ clock });
-// };
-
 const formHandler = e => {
   e.preventDefault();
   const input = e.target.elements.timezone;
